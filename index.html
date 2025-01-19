@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Luigi Celestino</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+            </div>
+        </nav>
+    </header>
+    <section id="about-section">
+        <h1>Hey world, I'm Luigi!</h1>
+        <div class="avatar">
+            <img src="https://static.wikia.nocookie.net/bae74557-fa28-4c29-b5cb-39cdb039ee4c/scale-to-width/755" alt="Avatar" class="circular_img">
+        </div>
+        <div class="bio">
+            <p>I am a recent computer science graduate from Western Governors University who is excited about software development. With strengths in Java backend
+            using the Spring Boot framework, I am well equipped with technicals skills paired along with an eagerness to learn and improve!
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/luigicelestino/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/luicelestino" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="swiper-container">
+            <!-- The swiper wrapper holds all the slides that display the projects -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/HotelReservationApp" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/LandonHotelAppPic.jpeg" alt="Landon Hotel App">
+                        </picture>
+                        <h3>Hotel Reservation App</h3>
+                        <h4><em>Java</em></h4>
+                        <p>The hotel reservation app is built using the Spring Boot framework to find and book available hotel rooms.</p>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/InventoryApplication" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/InventoryAppPic.JPG" alt="Inventory App">
+                        </picture>
+                        <h3>PC Shop App</h3>
+                        <h4><em>Java</em></h4>
+                        <p>This PC shop app tracks the inventory of available pre-built PC's as well as PC components and allows users to add them to the cart and checkout.</p>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/MovieRecommendationJupyter" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/Movie Recommender Data.JPG" alt="Movie Recommender App">
+                        </picture>
+                        <h3>Movie Recommender App</h3>
+                        <h4><em>Python</em></h4>
+                        <p>This app uses machine learning and takes user input to generate a list of movie recommendations based on the movie the user input. The app uses user-based collaborative filtering and cosine similarity scores to do this.</p>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/DeliveryTruckApp" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/DeliveryTruckAppPic.JPG" alt="Delivery Truck Routing App">
+                        </picture>
+                        <h3>Delivery Truck Routing App</h3>
+                        <h4><em>Python</em></h4>
+                        <p>This app uses the nearest-neighbor algorithm to determine the optimal path for delivering packages.</p>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/PortfolioWebsite" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/Portfolio Website Pic Temp.JPG" alt="Portfolio Website">
+                        </picture>
+                        <h3>Portfolio Website</h3>
+                        <h4><em>HTML & CSS</em></h4>
+                        <p>This project is my portfolio that displays my projects, skills, and a brief about me section to be shown to employers and individuals.</p>    
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/luicelestino/PortfolioWebsite" target="_blank" class="project-box">
+                        <picture>
+                            <img src="images/Portfolio Website Pic Temp.JPG" alt="Portfolio Website">
+                        </picture>
+                        <h3>Filler App</h3>
+                        <h4><em>Filler</em></h4>
+                        <p>This is a filler project to allow for overflow.</p>    
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="devicon-spring-original"></i>
+            <i class="devicon-mysql-original"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper-container", {
+            spaceBetween: 20, 
+            slidesPerView: 'auto',  
+            centeredSlides: false, 
+            
+        });
+    </script>
+</body>
+</html>

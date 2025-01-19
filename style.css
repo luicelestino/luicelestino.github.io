@@ -1,0 +1,235 @@
+/* Base Styles */
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #eeeff1;
+    font-size: 17px; /* Set the base font size */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    scroll-padding-top: 5rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.circular_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:#a5d6b0;
+    height: 5rem;
+    padding: 0 3.125rem;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 1.375rem;
+}
+
+nav .right a {
+    margin: 0 0.625rem;
+    color: var(--text-color);
+    font-size: 1.375rem;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-section {
+    background-color: #eeeff1;
+}
+
+#about-section h1 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 4rem 0rem;
+}
+
+#about-section .bio {
+    text-align: center;
+    padding: 4rem;
+}
+
+#projects-section {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#projects-section h2 {
+    margin-top: 3rem;
+    text-decoration: underline;
+    text-decoration-color: #a5d6b0;
+    text-underline-offset: 10px;
+}
+
+.project-box {
+    flex: 0 0 auto; 
+    width: 16rem;
+    text-align: center;
+    border: 1px solid #d7dbd8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+    margin-bottom: 2rem;
+}
+
+.project-box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.projects-scroll-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.social-links {
+    justify-content: center;
+    display: flex;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+.social-links i {
+    transition: color 0.3s ease; 
+    margin-top: 0rem; 
+    margin-bottom: 2.5rem;
+    color: #588061;
+    font-weight: 500;
+}
+
+
+.social-links a:hover i {
+    color: #a5d6b0;
+    transform: scale(1.2);
+}
+
+.swiper {
+    width: 200%;
+    overflow-x: scroll !important;
+}
+
+.swiper-container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: auto; 
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+}
+
+  .swiper-slide {
+    width: 272px !important;
+    height: 375.75px;
+}
+
+  .swiper-slide > a {
+    display: block;
+    transform: scale(0.9);
+    width: 272px;
+    height: 470px;
+}
+
+#skills-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: #a5d6b0;
+    color:#f9f9f9
+}
+
+#skills-section h2 {
+    margin-top: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    text-underline-offset: 10px;
+}
+
+#skills-section .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#skills-section i {
+    color: #588061;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+#skills-section i:hover {
+    transform: scale(1.2);
+    color: #e4980a;
+}
